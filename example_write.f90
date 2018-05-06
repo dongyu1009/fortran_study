@@ -13,7 +13,7 @@ program test
             write(dateindex, '(i4)') 8000 + n 
             write(dateindex2, '(i3.2)') n 
             filename = 'gpp201'//trim(dateindex)
-            if (n < 99) then
+            if (n < 100) then
                 filename2 = 'gpp_'//dateindex2(2:3)//'.tif'
             else 
                 filename2 = 'gpp_'//trim(dateindex2)//'.tif'
