@@ -14,9 +14,9 @@ program test
             write(dateindex2, '(i3.2)') n 
             filename = 'gpp201'//trim(dateindex)
             if (n < 99) then
-                filename2 = 'gpp_'//dateindex2(2:4)
+                filename2 = 'gpp_'//dateindex2(2:3)//'.tif'
             else 
-                filename2 = 'gpp_'//trim(dateindex2)
+                filename2 = 'gpp_'//trim(dateindex2)//'.tif'
             end if
             print *, filename2
       end do
